@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ogawaauto1963.vercel.app/sitemap.xml
