@@ -1,0 +1,57 @@
+/* v2: 余白と整理 */
+.sec{padding:72px 0}
+.sec-tight{padding-top:8px}
+.sec-h{margin-bottom:28px}
+.sec-h p{flex-basis:100%;margin-top:2px}
+.hub{padding:40px 0 0}
+.hub-btn small{font-weight:500}
+.hero-bg img{object-position:50% 45%}
+.trust-item{padding:26px 10px}
+/* 来店前カード（ハブの下に控えめに） */
+.more-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.more-grid.one{grid-template-columns:1fr}
+.more-card{display:grid;grid-template-columns:1fr auto;grid-template-areas:"tag go" "h go" "p go";column-gap:20px;row-gap:4px;align-items:center;padding:18px 22px;border-radius:var(--r);text-decoration:none}
+.more-card .tag{grid-area:tag;justify-self:start;font-size:11px;font-weight:900;padding:2px 10px;border-radius:999px}
+.more-card h3{grid-area:h;margin:0;font-size:18px;font-weight:900;line-height:1.4;display:flex;align-items:center;gap:8px}
+.more-card h3 .ico{width:26px;height:26px;flex:none}
+.more-card p{grid-area:p;margin:0;font-size:14px;line-height:1.7}
+.more-card .go{grid-area:go;white-space:nowrap;padding:10px 16px;border-radius:10px;font-weight:900;font-size:14px}
+.mc-sim{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.mc-sim h3{color:var(--green)}
+.mc-sim .tag{background:#e6f4ec;color:var(--green)}
+.mc-sim .go{background:var(--green);color:#fff}
+.mc-game{background:var(--navy-deep);color:#fff}
+.mc-game p{color:#d7dcf0}
+.mc-game .tag{background:var(--orange);color:#fff}
+.mc-game .go{background:var(--orange);color:#fff}
+.more-card:hover .go{filter:brightness(1.08)}
+.col-game{margin:0 0 18px}
+/* Instagram 帯 */
+.ig-band{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:40px;align-items:center}
+.ig-text .ig-word{display:flex;align-items:center;gap:10px;margin:0;font-size:clamp(22px,2.6vw,28px);font-weight:900;color:var(--navy);line-height:1.4}
+.ig-text .ig-word .ico{width:32px;height:32px;color:#d6246e}
+.ig-text p{margin:10px 0 18px;color:var(--sub);font-size:15px;line-height:1.8}
+.ig-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ig-photos a{display:block;border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:#e7eaf0}
+.ig-photos img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ig-photos a:hover img{transform:scale(1.04)}
+/* コラムカード */
+.col-card{align-items:center}
+.col-card img{width:104px;height:78px}
+/* 来店ステップ */
+.step figure img{aspect-ratio:4/3}
+/* スマホ下部バー 4つ */
+.actbar .l{background:#06C755}
+@media (max-width:720px){
+ .sec{padding:48px 0}
+ .sec-tight{padding-top:0}
+ .hub{padding-top:28px}
+ .more-grid{grid-template-columns:1fr;gap:10px}
+ .more-card{grid-template-columns:1fr;grid-template-areas:"tag" "h" "p" "go";padding:16px 18px}
+ .more-card .go{justify-self:start;margin-top:8px}
+ .ig-band{grid-template-columns:1fr;gap:20px}
+ .ig-photos{gap:6px}
+ .actbar{grid-template-columns:repeat(4,1fr)}
+ .actbar a{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){.ig-photos img{transition:none}}
